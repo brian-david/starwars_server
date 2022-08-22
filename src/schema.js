@@ -1,5 +1,5 @@
 //import { gql } from "apollo-server";
-const { gql } = require("apollo-server");
+const { gql } = require("apollo-server-lambda");
 
 const typeDefs = gql`
   type Homeworld {

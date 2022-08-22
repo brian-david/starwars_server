@@ -1,4 +1,4 @@
-export const resolvers = {
+const resolvers = {
   Query: {
     peoplepage: async (_, __, { dataSources }) => {
       return await dataSources.swApi.getAllPeople();
@@ -10,3 +10,5 @@ export const resolvers = {
     },
   },
 };
+
+module.exports = resolvers;

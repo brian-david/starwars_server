@@ -1,6 +1,4 @@
-//import { ApolloServer } from "apollo-server-express";
 const { ApolloServer } = require("apollo-server");
-//import typeDefs from "./schema";
 const typeDefs = require("./schema");
 const resolvers = require("./resolvers");
 const SWAPI = require("./datasources/SWAPI");
