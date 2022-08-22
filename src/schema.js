@@ -1,5 +1,4 @@
-//import { gql } from "apollo-server";
-const { gql } = require("apollo-server-lambda");
+const { gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Homeworld {
@@ -26,5 +25,4 @@ const typeDefs = gql`
   }
 `;
 
-//export default typeDefs;
 module.exports = typeDefs;
