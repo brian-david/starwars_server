@@ -1,8 +1,8 @@
 {
-  "name": "graphql-server",
+  "name": "starwar-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "node src/index",
     "dev": "nodemon src/index"
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "^16.0.1",
     "nodemon": "^2.0.19"
   },
   "dependencies": {
