@@ -5,17 +5,17 @@ class SWAPI extends RESTDataSource {
     super();
   }
 
-  getAllPeople() {
-    //console.log(JSON.stringify(this.get("peoople").results));
-    return this.get("https://swapi.dev/api/people");
+  //this is the initial endpoint that call all the peoople from page one
+  // this is the endpoint to get different pages -> https://swapi.dev/api/people/?page=3
+  getAllPeople(pageId) {
+    if (pageId) {
+      return this.get(`https://swapi.dev/api/people?page=${pageId}`);
+    }
+    return this.get(`https://swapi.dev/api/people`);
   }
 
   getHomeworld(homeworld) {
     return this.get(`${homeworld}`);
-  }
-
-  getPeoplePage(endpoint) {
-    return this.get(endpoint);
   }
 }
 

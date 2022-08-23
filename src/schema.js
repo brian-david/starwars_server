@@ -21,7 +21,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    peoplepage: PeoplePage
+    peoplepage(pageId: ID): PeoplePage
   }
 `;
 

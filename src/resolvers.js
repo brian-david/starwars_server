@@ -1,7 +1,7 @@
 const resolvers = {
   Query: {
-    peoplepage: async (_, __, { dataSources }) => {
-      return await dataSources.swApi.getAllPeople();
+    peoplepage: async (_, { pageId }, { dataSources }) => {
+      return await dataSources.swApi.getAllPeople(pageId);
     },
   },
   Person: {
